@@ -77,4 +77,6 @@ lib/
 ## **Author**
 
 **Musa Maluleke**  
+
+---
 Feel free to connect or contribute! 😊
