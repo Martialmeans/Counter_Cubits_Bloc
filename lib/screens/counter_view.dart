@@ -33,16 +33,14 @@ class CounterView extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
+              spacing: 10.0,
               children: [
                 IconButton(
                   onPressed: () {
-                    context.read<CounterCubit>().increment();
+                    context.read<CounterCubit>().decrement();
                   },
                   iconSize: 40,
-                  icon: const Icon(Icons.add),
-                ),
-                const SizedBox(
-                  width: 20,
+                  icon: const Icon(Icons.remove),
                 ),
                 BlocBuilder<CounterCubit, int>(
                   builder: (context, state) {
@@ -54,15 +52,12 @@ class CounterView extends StatelessWidget {
                     );
                   },
                 ),
-                const SizedBox(
-                  width: 20,
-                ),
                 IconButton(
                   onPressed: () {
-                    context.read<CounterCubit>().decrement();
+                    context.read<CounterCubit>().increment();
                   },
                   iconSize: 40,
-                  icon: const Icon(Icons.remove),
+                  icon: const Icon(Icons.add),
                 ),
               ],
             ),
