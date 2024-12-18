@@ -39,6 +39,7 @@ lib/
 - **Flutter**: Framework for building the app.
 - **Cubit (Bloc library)**: For state management.
 - **Google Fonts**: Poppins font integration for a polished UI.
+- **Shared preferences**: to store preferences
 
 ---
 
